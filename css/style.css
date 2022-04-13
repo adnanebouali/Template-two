@@ -12,6 +12,7 @@ html {
 }
 body {
   font-family: "Open Sans", sans-serif;
+  background-color: black;
 }
 ul {
   list-style: none;
@@ -40,5 +41,28 @@ ul {
     width: 1170px;
   }
 }
-
 /*end global rules  */
+/*start header */
+header {
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header .container::after {
+  content: "";
+  position: absolute;
+  background-color: #a2a2a2;
+  height: 1px;
+  width: calc(100% - 30px);
+  bottom: 0;
+}
+header img {
+  height: 40px;
+}
+header nav {
+  flex: 1;
+}
+/*end header */

@@ -187,6 +187,7 @@ header nav .form i {
     max-width: 100%;
   }
 }
+
 .landing .text .content h2 {
   font-size: 32px;
   font-weight: normal;
@@ -202,6 +203,14 @@ header nav .form i {
   top: 50%;
   transform: translateY(-50%);
   color: white;
+}
+@media (max-width: 480px) {
+  .landing .text .content h2 {
+    font-size: 25px;
+  }
+  .landing .text .content p {
+    font-size: 12px;
+  }
 }
 .landing .fa-angle-left {
   left: 30px;

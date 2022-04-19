@@ -546,9 +546,13 @@ header nav .form i {
   color: white;
   background-color: var(--transparent-color);
 }
+
 @media (max-width: 767px) {
   .stats .container .box {
     flex-basis: 100%;
+  }
+  .stats .container .box:last-child {
+    border: none;
   }
 }
 @media (min-width: 768px) {

@@ -719,10 +719,19 @@ header nav .form i {
 .quote .container {
   position: relative;
 }
+.quote .container i {
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: rgb(147, 147, 147);
+}
 .quote .container q {
   font-size: 30px;
   display: block;
   margin-bottom: 20px;
+}
+.quote .container p {
+  color: rgb(147, 147, 147);
 }
 q::before {
   font-family: "Font Awesome 5 Free";
@@ -743,3 +752,87 @@ q::after {
   top: -10px;
 }
 /* End Quote  */
+/* Start Pricing */
+.pricing {
+  padding-top: var(--section--padding);
+  padding-bottom: var(--section--padding);
+}
+.pricing .plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+}
+.pricing .plans .plan {
+  background-color: #fcfcfc;
+  text-align: center;
+}
+.pricing .plans .plan .head {
+  padding: 40px 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--main-color) transparent var(--main-color) transparent;
+}
+.pricing .plans .plan .head h3 {
+  font-weight: normal;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.pricing .plans .plan .head span {
+  font-size: 60px;
+  font-weight: 600;
+  position: relative;
+}
+.pricing .plans .plan .head span::before {
+  content: "$";
+  position: relative;
+  font-size: 25px;
+  font-weight: normal;
+  top: -40px;
+  margin-right: 15px;
+}
+.pricing .plans .plan .head span::after {
+  content: "/Mo ";
+  font-size: 20px;
+  top: 0;
+  margin-left: 15px;
+}
+.pricing .plans .plan ul {
+  border-bottom: 1px solid var(--main-color);
+}
+.pricing .plans .plan ul li {
+  position: relative;
+  padding: 20px;
+}
+.pricing .plans .plan ul li:not(:last-child):after {
+  content: "";
+  position: absolute;
+  background-color: #19c8fa;
+  width: 140px;
+  height: 1px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+}
+.pricing .plans .plan .footer a {
+  display: block;
+  width: fit-content;
+  padding: 20px;
+  border: 1px solid var(--main-color);
+  margin: 30px auto;
+  text-decoration: none;
+}
+.pricing .contact-text {
+  text-align: center;
+  margin: 50px auto 20px;
+  font-size: 20px;
+}
+.pricing .contact-link {
+  display: block;
+  background-color: var(--main-color);
+  padding: 15px 30px;
+  width: fit-content;
+  margin: 20px auto;
+  color: white;
+  text-decoration: none;
+}
+/* End Pricing */
